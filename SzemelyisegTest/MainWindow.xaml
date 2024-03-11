@@ -1,0 +1,54 @@
+﻿<Window x:Class="SzemelyisegTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SzemelyisegTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800" Background="#FFD4B6B6">
+    <Grid>
+        <Label Content="Neved:" HorizontalAlignment="Left" Margin="21,23,0,0" VerticalAlignment="Top" Width="86"/>
+        <TextBox HorizontalAlignment="Left" Margin="76,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="#FFBBBBBB"/>
+        <Label Content="E-mail cím:" HorizontalAlignment="Left" Margin="21,54,0,0" VerticalAlignment="Top" Width="95" Height="24"/>
+        <Label Content="Személyiség Test" HorizontalAlignment="Center" VerticalAlignment="Top" Width="140" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Margin="92,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="168" Background="#FFBBBBBB"/>
+        <Label Content="1. Hogyan töltöd a szabadidődet?" HorizontalAlignment="Left" Height="26" Margin="10,115,0,0" VerticalAlignment="Top" Width="252" FontStyle="Italic"/>
+        <StackPanel HorizontalAlignment="Left" Height="73" Margin="10,146,0,0" VerticalAlignment="Top" Width="227">
+            <CheckBox Content="a) Olvasással"/>
+            <CheckBox Content="b) Sportolással"/>
+            <CheckBox Content="c) Barátokkal lógok"/>
+            <CheckBox Content="d) Művészet és kreatív tevékenységek"/>
+        </StackPanel>
+        <Label Content="2. Milyen típusú filmeket szeretsz nézni?" HorizontalAlignment="Left" Height="26" Margin="10,241,0,0" VerticalAlignment="Top" Width="252" FontStyle="Italic"/>
+        <StackPanel HorizontalAlignment="Left" Height="65" Margin="21,287,0,0" VerticalAlignment="Top" Width="216">
+            <CheckBox Content="a) Akció és kaland" RenderTransformOrigin="0.541,0.862"/>
+            <CheckBox Content="b) Romantikus filmek" RenderTransformOrigin="0.541,0.862"/>
+            <CheckBox Content="c) Horror vagy thriller" RenderTransformOrigin="0.541,0.862"/>
+            <CheckBox Content="d) Dokumentumfilmek" RenderTransformOrigin="0.541,0.862"/>
+        </StackPanel>
+        <Label Content="3. Hogyan reagálsz a stresszes helyzetekre?" HorizontalAlignment="Left" Height="26" Margin="8,381,0,0" VerticalAlignment="Top" Width="252" FontStyle="Italic"/>
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="16,438,0,0" VerticalAlignment="Top" Width="216">
+            <ComboBoxItem>a) Nyugodtan és racionálisan</ComboBoxItem>
+            <ComboBoxItem>b) Érzelmileg és intenzíven</ComboBoxItem>
+            <ComboBoxItem>c) Kerülöm a konfliktust</ComboBoxItem>
+            <ComboBoxItem>d) Megpróbálom megoldani a problémát</ComboBoxItem>
+        </ComboBox>
+        <Label Content="4. Milyen a kommunikációs stílusod?" HorizontalAlignment="Left" Height="26" Margin="313,110,0,0" VerticalAlignment="Top" Width="252" FontStyle="Italic"/>
+        <StackPanel HorizontalAlignment="Left" Height="73" Margin="313,146,0,0" VerticalAlignment="Top" Width="224">
+            <RadioButton Content="a) Közvetlen és őszinte"/>
+            <RadioButton Content="b) Udvarias és megfontolt"/>
+            <RadioButton Content="c) Társaságkedvelő és beszédes"/>
+            <RadioButton Content="d) Zárkózott és hallgatag"/>
+        </StackPanel>
+        <Label Content="5. Milyen környezetben érzed magad a legkényelmesebben?" HorizontalAlignment="Left" Height="26" Margin="313,241,0,0" VerticalAlignment="Top" Width="344" FontStyle="Italic"/>
+        <ListBox HorizontalAlignment="Left" Height="96" Margin="310,287,0,0" VerticalAlignment="Top" Width="476">
+            <ListBoxItem>a) Nyüzsgő, társasági helyeken, mint például koncerteken vagy partikon</ListBoxItem>
+            <ListBoxItem>b) Nyugodt, csendes helyeken, mint például egy könyvtárban vagy a saját otthonodban</ListBoxItem>
+            <ListBoxItem>c) A szabadban, természetben, például erdőben vagy a tengerparton</ListBoxItem>
+            <ListBoxItem>d) Inspiráló helyeken, mint például múzeumokban vagy művészeti galériákban</ListBoxItem>
+        </ListBox>
+        <Button x:Name="gomb" Content="Kész" HorizontalAlignment="Left" Height="55" Margin="455,438,0,0" VerticalAlignment="Top" Width="218" FontSize="30" Background="#FFF7C2FD" Click="Button_Click"/>
+        <Image HorizontalAlignment="Left" Height="165" Margin="562,36,0,0" VerticalAlignment="Top" Width="224" Source="/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg"/>
+
+    </Grid>
+</Window>
