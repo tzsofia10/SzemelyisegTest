@@ -10,10 +10,12 @@
 
   <ItemGroup>
     <None Remove="360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" />
+    <None Remove="Orange-colored-cat-yawns-displaying-teeth.webp" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" />
+    <Resource Include="Orange-colored-cat-yawns-displaying-teeth.webp" />
   </ItemGroup>
 
 </Project>

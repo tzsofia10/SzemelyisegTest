@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SzemelyisegTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="550" Width="800" Background="#FFD4B6B6">
+        Title="MainWindow" Height="1000" Width="880" Background="#FFD4B6B6">
     <Grid>
         <Label Content="Neved:" HorizontalAlignment="Left" Margin="21,23,0,0" VerticalAlignment="Top" Width="86"/>
         <TextBox HorizontalAlignment="Left" Margin="76,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="#FFBBBBBB"/>
@@ -13,42 +13,55 @@
         <Label Content="Személyiség Test" HorizontalAlignment="Center" VerticalAlignment="Top" Width="140" FontWeight="Bold"/>
         <TextBox HorizontalAlignment="Left" Margin="92,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="168" Background="#FFBBBBBB"/>
         <Label Content="1. Hogyan töltöd a szabadidődet?" HorizontalAlignment="Left" Height="26" Margin="10,115,0,0" VerticalAlignment="Top" Width="252" FontStyle="Italic"/>
-        <StackPanel HorizontalAlignment="Left" Height="73" Margin="10,146,0,0" VerticalAlignment="Top" Width="227">
+        <StackPanel x:Name="stc1" HorizontalAlignment="Left" Height="73" Margin="10,146,0,0" VerticalAlignment="Top" Width="227">
             <CheckBox Content="a) Olvasással"/>
             <CheckBox Content="b) Sportolással"/>
             <CheckBox Content="c) Barátokkal lógok"/>
             <CheckBox Content="d) Művészet és kreatív tevékenységek"/>
         </StackPanel>
         <Label Content="2. Milyen típusú filmeket szeretsz nézni?" HorizontalAlignment="Left" Height="26" Margin="10,241,0,0" VerticalAlignment="Top" Width="252" FontStyle="Italic"/>
-        <StackPanel HorizontalAlignment="Left" Height="65" Margin="21,287,0,0" VerticalAlignment="Top" Width="216">
+        <StackPanel x:Name="stc2" HorizontalAlignment="Left" Height="65" Margin="21,287,0,0" VerticalAlignment="Top" Width="216">
             <CheckBox Content="a) Akció és kaland" RenderTransformOrigin="0.541,0.862"/>
             <CheckBox Content="b) Romantikus filmek" RenderTransformOrigin="0.541,0.862"/>
             <CheckBox Content="c) Horror vagy thriller" RenderTransformOrigin="0.541,0.862"/>
             <CheckBox Content="d) Dokumentumfilmek" RenderTransformOrigin="0.541,0.862"/>
         </StackPanel>
         <Label Content="3. Hogyan reagálsz a stresszes helyzetekre?" HorizontalAlignment="Left" Height="26" Margin="8,381,0,0" VerticalAlignment="Top" Width="252" FontStyle="Italic"/>
-        <ComboBox HorizontalAlignment="Left" Height="24" Margin="16,438,0,0" VerticalAlignment="Top" Width="216">
+        <ComboBox x:Name="combo1" HorizontalAlignment="Left" Height="24" Margin="16,438,0,0" VerticalAlignment="Top" Width="216">
             <ComboBoxItem>a) Nyugodtan és racionálisan</ComboBoxItem>
             <ComboBoxItem>b) Érzelmileg és intenzíven</ComboBoxItem>
             <ComboBoxItem>c) Kerülöm a konfliktust</ComboBoxItem>
             <ComboBoxItem>d) Megpróbálom megoldani a problémát</ComboBoxItem>
         </ComboBox>
         <Label Content="4. Milyen a kommunikációs stílusod?" HorizontalAlignment="Left" Height="26" Margin="313,110,0,0" VerticalAlignment="Top" Width="252" FontStyle="Italic"/>
-        <StackPanel HorizontalAlignment="Left" Height="73" Margin="313,146,0,0" VerticalAlignment="Top" Width="224">
+        <StackPanel x:Name="stc3" HorizontalAlignment="Left" Height="73" Margin="313,146,0,0" VerticalAlignment="Top" Width="224">
             <RadioButton Content="a) Közvetlen és őszinte"/>
             <RadioButton Content="b) Udvarias és megfontolt"/>
             <RadioButton Content="c) Társaságkedvelő és beszédes"/>
             <RadioButton Content="d) Zárkózott és hallgatag"/>
         </StackPanel>
         <Label Content="5. Milyen környezetben érzed magad a legkényelmesebben?" HorizontalAlignment="Left" Height="26" Margin="313,241,0,0" VerticalAlignment="Top" Width="344" FontStyle="Italic"/>
-        <ListBox HorizontalAlignment="Left" Height="96" Margin="310,287,0,0" VerticalAlignment="Top" Width="476">
+        <ListBox x:Name="list1" HorizontalAlignment="Left" Height="96" Margin="310,287,0,0" VerticalAlignment="Top" Width="476">
             <ListBoxItem>a) Nyüzsgő, társasági helyeken, mint például koncerteken vagy partikon</ListBoxItem>
             <ListBoxItem>b) Nyugodt, csendes helyeken, mint például egy könyvtárban vagy a saját otthonodban</ListBoxItem>
             <ListBoxItem>c) A szabadban, természetben, például erdőben vagy a tengerparton</ListBoxItem>
             <ListBoxItem>d) Inspiráló helyeken, mint például múzeumokban vagy művészeti galériákban</ListBoxItem>
         </ListBox>
-        <Button x:Name="gomb" Content="Kész" HorizontalAlignment="Left" Height="55" Margin="455,438,0,0" VerticalAlignment="Top" Width="218" FontSize="30" Background="#FFF7C2FD" Click="Button_Click"/>
+        <Button x:Name="gomb" Content="Kész" HorizontalAlignment="Left" Height="55" Margin="456,422,0,0" VerticalAlignment="Top" Width="218" FontSize="30" Background="#FFF7C2FD" Click="Button_Click"/>
         <Image HorizontalAlignment="Left" Height="165" Margin="562,36,0,0" VerticalAlignment="Top" Width="224" Source="/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg"/>
+        <Label Content="Válaszok:" HorizontalAlignment="Left" Height="25" Margin="10,511,0,0" VerticalAlignment="Top" Width="222"/>
+        <Label x:Name="lbl3"  Content="" HorizontalAlignment="Center" Height="25" Margin="0,614,0,0" VerticalAlignment="Top" Width="217" Background="White"/>
+        <Label x:Name="lbl5"  Content="" HorizontalAlignment="Left" Height="26" Margin="10,903,0,0" VerticalAlignment="Top" Width="462" Background="White"/>
+        <Label x:Name="lbl4" Content="" HorizontalAlignment="Center" Height="28" Margin="0,764,0,0" VerticalAlignment="Top" Width="216" Background="White"/>
+        <ListBox x:Name="lbl1" HorizontalAlignment="Left" Height="89" Margin="6,614,0,0" VerticalAlignment="Top" Width="230"/>
+        <ListBox x:Name="lbl2" HorizontalAlignment="Left" Height="86" Margin="10,764,0,0" VerticalAlignment="Top" Width="228"/>
+        <Image HorizontalAlignment="Left" Height="220" Margin="581,604,0,0" VerticalAlignment="Top" Width="301" Source="/Orange-colored-cat-yawns-displaying-teeth.webp"/>
+        <Label Content="1 kérdésre a válaszod:" HorizontalAlignment="Left" Margin="10,578,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Content="2 kérdésre a válaszod:" HorizontalAlignment="Left" Margin="10,733,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Content="3 kérdésre a válaszod:" HorizontalAlignment="Left" Margin="10,865,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Content="4 kérdésre a válaszod:" HorizontalAlignment="Left" Margin="332,578,0,0" VerticalAlignment="Top" Width="130"/>
+        <Label Content="5 kérdésre a válaszod:" HorizontalAlignment="Left" Margin="332,733,0,0" VerticalAlignment="Top" Width="131"/>
+
 
     </Grid>
 </Window>
